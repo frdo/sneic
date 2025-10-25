@@ -173,7 +173,6 @@ void update_game(Game* game) {
     draw_char_on_point(game->snake[game->snake_lenght - 1].x, game->snake[game->snake_lenght - 1].y, ' ');
     for(int i = game->snake_lenght - 1; i > 0; i--) {
         game->snake[i] = game->snake[i-1];
-        draw_piece_of_snake(game->snake[i].x, game->snake[i].y);
     }
     game->snake[0] = new_head;
     draw_piece_of_snake(game->snake[0].x, game->snake[0].y);
