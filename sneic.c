@@ -236,10 +236,10 @@ int main() {
     printf("     A: GO LEFT\n");
     printf("     S: GO DOWN\n");
     printf("     D: GO RIGHT\n");
-    printf("\nPress any to start...\n");
+    printf("\nPress L to start...\n");
     while(1) {
         get_command(&input_command);
-        if(input_command > 0) {
+        if(input_command == 'l') {
             break;
         }
     }
