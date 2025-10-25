@@ -230,7 +230,13 @@ int main() {
 
     setup_terminal();
     clean_output();
-    printf("Welcome to SNEIK! Let's play!\nPress L to start...\n");
+    printf("Welcome to SNEIK! Let's play!\n");
+    printf("Commands:\n");
+    printf("     W: GO UP\n");
+    printf("     A: GO LEFT\n");
+    printf("     S: GO DOWN\n");
+    printf("     D: GO RIGHT\n");
+    printf("\nPress any to start...\n");
     while(1) {
         get_command(&input_command);
         if(input_command > 0) {
