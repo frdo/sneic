@@ -59,19 +59,19 @@ void get_command(char* c) {
 }
 
 /*
- * Print the given char on the given point
- */
-void draw_char_on_point(int x, int y, char c) {
-    printf("\033[%d;%dH", y, x);
-    printf("%c", c);
-    fflush(stdout);
-}
-
-/*
  * Position the cursor on the given point
  */
 void position_on_point(int x, int y) {
     printf("\033[%d;%dH", y, x);
+}
+
+/*
+ * Print the given char on the given point
+ */
+void draw_char_on_point(int x, int y, char c) {
+    position_on_point(x, y);
+    printf("%c", c);
+    fflush(stdout);
 }
 
 /*
