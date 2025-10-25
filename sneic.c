@@ -40,8 +40,8 @@ void init_game(Game* game) {
     game->game_over = 0;
     game->direction = 'u';
     srand(time(NULL));
-    game->food.x = rand_between(0, GAME_BOARD_WIDTH);
-    game->food.y = rand_between(0, GAME_BOARD_HEIGTH);
+    game->food.x = rand_between(1, GAME_BOARD_WIDTH);
+    game->food.y = rand_between(1, GAME_BOARD_HEIGTH);
 }
 
 /*
@@ -182,8 +182,8 @@ void update_game(Game* game) {
     if(new_head.x == game->food.x && new_head.y == game->food.y) {
         game->snake_lenght++;
         game->score += 1;
-        game->food.x = rand_between(0, GAME_BOARD_WIDTH);
-        game->food.y = rand_between(0, GAME_BOARD_HEIGTH);
+        game->food.x = rand_between(1, GAME_BOARD_WIDTH);
+        game->food.y = rand_between(1, GAME_BOARD_HEIGTH);
         draw_food(game->food.x, game->food.y); // Draw new food
     }
 }
