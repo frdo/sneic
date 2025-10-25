@@ -156,7 +156,7 @@ void update_game(Game* game) {
     }
 
     // Wall collision check
-    if(new_head.x < 1 || new_head.x > GAME_BOARD_WIDTH-1 || new_head.y < 1 || new_head.y > GAME_BOARD_HEIGTH-1) {
+    if(new_head.x <= 1 || new_head.x >= GAME_BOARD_WIDTH || new_head.y <= 1 || new_head.y >= GAME_BOARD_HEIGTH) {
         game->game_over = 1;
         return;
     }
