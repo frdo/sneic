@@ -1,7 +1,8 @@
 # SNEIC 🐍
 
-This is an implementation in C language of the famous snake game.\
-Just wrote it for learning. It has bugs, it could be better implemented (using a linked list instead of an array for the snake's body and so forth).
+An implementation in C language of the famous snake game running in terminal.\
+Just wrote it for learning and fun.\
+It has bugs, it could be better implemented.
 
 I tested on linux in XFCE term.
 
